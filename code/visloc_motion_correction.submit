@@ -1,0 +1,132 @@
+universe = vanilla
+output = condor_logs/$(CLUSTER).$(PROCESS).out
+error = condor_logs/$(CLUSTER).$(PROCESS).err
+log = condor_logs/$(CLUSTER).$(PROCESS).log
+initialdir = /home/data/psyinf/forrest_gump/collection/aligned
+getenv = True
+request_cpus = 1
+request_memory = 4000
+should_transfer_files = NO
+transfer_executable = False
+executable = /home/data/psyinf/forrest_gump/collection/aligned/code/mcflirt_2stage
+
+arguments = raw/phase2/sub-01/ses-localizer/func/sub-01_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-01/bold3Tp2/brain.nii.gz sub-01/in_bold3Tp2/sub-01_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-01/ses-localizer/func/sub-01_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-01/bold3Tp2/brain.nii.gz sub-01/in_bold3Tp2/sub-01_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-01/ses-localizer/func/sub-01_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-01/bold3Tp2/brain.nii.gz sub-01/in_bold3Tp2/sub-01_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-01/ses-localizer/func/sub-01_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-01/bold3Tp2/brain.nii.gz sub-01/in_bold3Tp2/sub-01_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-02/ses-localizer/func/sub-02_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-02/bold3Tp2/brain.nii.gz sub-02/in_bold3Tp2/sub-02_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-02/ses-localizer/func/sub-02_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-02/bold3Tp2/brain.nii.gz sub-02/in_bold3Tp2/sub-02_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-02/ses-localizer/func/sub-02_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-02/bold3Tp2/brain.nii.gz sub-02/in_bold3Tp2/sub-02_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-02/ses-localizer/func/sub-02_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-02/bold3Tp2/brain.nii.gz sub-02/in_bold3Tp2/sub-02_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-03/ses-localizer/func/sub-03_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-03/bold3Tp2/brain.nii.gz sub-03/in_bold3Tp2/sub-03_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-03/ses-localizer/func/sub-03_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-03/bold3Tp2/brain.nii.gz sub-03/in_bold3Tp2/sub-03_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-03/ses-localizer/func/sub-03_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-03/bold3Tp2/brain.nii.gz sub-03/in_bold3Tp2/sub-03_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-03/ses-localizer/func/sub-03_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-03/bold3Tp2/brain.nii.gz sub-03/in_bold3Tp2/sub-03_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-04/ses-localizer/func/sub-04_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-04/bold3Tp2/brain.nii.gz sub-04/in_bold3Tp2/sub-04_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-04/ses-localizer/func/sub-04_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-04/bold3Tp2/brain.nii.gz sub-04/in_bold3Tp2/sub-04_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-04/ses-localizer/func/sub-04_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-04/bold3Tp2/brain.nii.gz sub-04/in_bold3Tp2/sub-04_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-04/ses-localizer/func/sub-04_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-04/bold3Tp2/brain.nii.gz sub-04/in_bold3Tp2/sub-04_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-05/ses-localizer/func/sub-05_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-05/bold3Tp2/brain.nii.gz sub-05/in_bold3Tp2/sub-05_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-05/ses-localizer/func/sub-05_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-05/bold3Tp2/brain.nii.gz sub-05/in_bold3Tp2/sub-05_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-05/ses-localizer/func/sub-05_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-05/bold3Tp2/brain.nii.gz sub-05/in_bold3Tp2/sub-05_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-05/ses-localizer/func/sub-05_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-05/bold3Tp2/brain.nii.gz sub-05/in_bold3Tp2/sub-05_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-06/ses-localizer/func/sub-06_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-06/bold3Tp2/brain.nii.gz sub-06/in_bold3Tp2/sub-06_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-06/ses-localizer/func/sub-06_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-06/bold3Tp2/brain.nii.gz sub-06/in_bold3Tp2/sub-06_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-06/ses-localizer/func/sub-06_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-06/bold3Tp2/brain.nii.gz sub-06/in_bold3Tp2/sub-06_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-06/ses-localizer/func/sub-06_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-06/bold3Tp2/brain.nii.gz sub-06/in_bold3Tp2/sub-06_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-09/ses-localizer/func/sub-09_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-09/bold3Tp2/brain.nii.gz sub-09/in_bold3Tp2/sub-09_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-09/ses-localizer/func/sub-09_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-09/bold3Tp2/brain.nii.gz sub-09/in_bold3Tp2/sub-09_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-09/ses-localizer/func/sub-09_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-09/bold3Tp2/brain.nii.gz sub-09/in_bold3Tp2/sub-09_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-09/ses-localizer/func/sub-09_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-09/bold3Tp2/brain.nii.gz sub-09/in_bold3Tp2/sub-09_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-10/ses-localizer/func/sub-10_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-10/bold3Tp2/brain.nii.gz sub-10/in_bold3Tp2/sub-10_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-10/ses-localizer/func/sub-10_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-10/bold3Tp2/brain.nii.gz sub-10/in_bold3Tp2/sub-10_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-10/ses-localizer/func/sub-10_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-10/bold3Tp2/brain.nii.gz sub-10/in_bold3Tp2/sub-10_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-10/ses-localizer/func/sub-10_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-10/bold3Tp2/brain.nii.gz sub-10/in_bold3Tp2/sub-10_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-14/ses-localizer/func/sub-14_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-14/bold3Tp2/brain.nii.gz sub-14/in_bold3Tp2/sub-14_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-14/ses-localizer/func/sub-14_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-14/bold3Tp2/brain.nii.gz sub-14/in_bold3Tp2/sub-14_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-14/ses-localizer/func/sub-14_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-14/bold3Tp2/brain.nii.gz sub-14/in_bold3Tp2/sub-14_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-14/ses-localizer/func/sub-14_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-14/bold3Tp2/brain.nii.gz sub-14/in_bold3Tp2/sub-14_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-15/ses-localizer/func/sub-15_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-15/bold3Tp2/brain.nii.gz sub-15/in_bold3Tp2/sub-15_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-15/ses-localizer/func/sub-15_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-15/bold3Tp2/brain.nii.gz sub-15/in_bold3Tp2/sub-15_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-15/ses-localizer/func/sub-15_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-15/bold3Tp2/brain.nii.gz sub-15/in_bold3Tp2/sub-15_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-15/ses-localizer/func/sub-15_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-15/bold3Tp2/brain.nii.gz sub-15/in_bold3Tp2/sub-15_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-16/ses-localizer/func/sub-16_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-16/bold3Tp2/brain.nii.gz sub-16/in_bold3Tp2/sub-16_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-16/ses-localizer/func/sub-16_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-16/bold3Tp2/brain.nii.gz sub-16/in_bold3Tp2/sub-16_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-16/ses-localizer/func/sub-16_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-16/bold3Tp2/brain.nii.gz sub-16/in_bold3Tp2/sub-16_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-16/ses-localizer/func/sub-16_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-16/bold3Tp2/brain.nii.gz sub-16/in_bold3Tp2/sub-16_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-17/ses-localizer/func/sub-17_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-17/bold3Tp2/brain.nii.gz sub-17/in_bold3Tp2/sub-17_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-17/ses-localizer/func/sub-17_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-17/bold3Tp2/brain.nii.gz sub-17/in_bold3Tp2/sub-17_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-17/ses-localizer/func/sub-17_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-17/bold3Tp2/brain.nii.gz sub-17/in_bold3Tp2/sub-17_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-17/ses-localizer/func/sub-17_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-17/bold3Tp2/brain.nii.gz sub-17/in_bold3Tp2/sub-17_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-18/ses-localizer/func/sub-18_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-18/bold3Tp2/brain.nii.gz sub-18/in_bold3Tp2/sub-18_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-18/ses-localizer/func/sub-18_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-18/bold3Tp2/brain.nii.gz sub-18/in_bold3Tp2/sub-18_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-18/ses-localizer/func/sub-18_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-18/bold3Tp2/brain.nii.gz sub-18/in_bold3Tp2/sub-18_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-18/ses-localizer/func/sub-18_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-18/bold3Tp2/brain.nii.gz sub-18/in_bold3Tp2/sub-18_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-19/ses-localizer/func/sub-19_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-19/bold3Tp2/brain.nii.gz sub-19/in_bold3Tp2/sub-19_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-19/ses-localizer/func/sub-19_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-19/bold3Tp2/brain.nii.gz sub-19/in_bold3Tp2/sub-19_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-19/ses-localizer/func/sub-19_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-19/bold3Tp2/brain.nii.gz sub-19/in_bold3Tp2/sub-19_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-19/ses-localizer/func/sub-19_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-19/bold3Tp2/brain.nii.gz sub-19/in_bold3Tp2/sub-19_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = raw/phase2/sub-20/ses-localizer/func/sub-20_ses-localizer_task-objectcategories_run-1_bold.nii.gz raw/tnt/sub-20/bold3Tp2/brain.nii.gz sub-20/in_bold3Tp2/sub-20_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = raw/phase2/sub-20/ses-localizer/func/sub-20_ses-localizer_task-objectcategories_run-2_bold.nii.gz raw/tnt/sub-20/bold3Tp2/brain.nii.gz sub-20/in_bold3Tp2/sub-20_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = raw/phase2/sub-20/ses-localizer/func/sub-20_ses-localizer_task-objectcategories_run-3_bold.nii.gz raw/tnt/sub-20/bold3Tp2/brain.nii.gz sub-20/in_bold3Tp2/sub-20_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = raw/phase2/sub-20/ses-localizer/func/sub-20_ses-localizer_task-objectcategories_run-4_bold.nii.gz raw/tnt/sub-20/bold3Tp2/brain.nii.gz sub-20/in_bold3Tp2/sub-20_task-objectcategories_run-4_bold.nii.gz
+queue
