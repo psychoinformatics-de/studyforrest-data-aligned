@@ -1,0 +1,6 @@
+[submodule "raw/phase2"]
+	path = raw/phase2
+	url = ../phase2
+[submodule "raw/tnt"]
+	path = raw/tnt
+	url = ../tnt
