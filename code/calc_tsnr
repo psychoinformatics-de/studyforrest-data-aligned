@@ -1,0 +1,39 @@
+#!/usr/bin/python
+"""
+Compute a tSNR volume given an input time series image.
+"""
+
+import os
+import sys
+
+if not len(sys.argv) == 2:
+    print __doc__
+    sys.exit(1)
+
+import nibabel as nb
+from mvpa2.mappers.detrend import poly_detrend
+from mvpa2.datasets.mri import fmri_dataset
+from mvpa2.datasets.mri import map2nifti
+
+infilename = sys.argv[1]
+outfilename = os.path.splitext(infilename)[0]
+if outfilename.endswith('.nii'):
+    outfilename = os.path.splitext(outfilename)[0]
+outfilename += '_tsnr.nii.gz'
+
+ds = fmri_dataset(infilename)
+# clip the value range, can only be negative due to interpolation
+# regime
+ds.samples[ds.samples < 0] = 0
+# first capture mean -- detrending will bring it close to zero
+m = ds.samples.mean(axis=0)
+# now detrend
+poly_detrend(ds, polyord=1)
+# and get the std after linear trend removal
+std = ds.samples.std(axis=0)
+# compute tSNR
+m[std > 0] /= std[std > 0]
+# protect against ultra-low noise voxels (images are zero'ed at the edges)
+m[m > 1000] = 1000
+
+map2nifti(ds, m).to_filename(outfilename)

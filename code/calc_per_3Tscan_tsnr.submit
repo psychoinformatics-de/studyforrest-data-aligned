@@ -1,0 +1,522 @@
+universe = vanilla
+output = condor_logs/$(CLUSTER).$(PROCESS).out
+error = condor_logs/$(CLUSTER).$(PROCESS).err
+log = condor_logs/$(CLUSTER).$(PROCESS).log
+initialdir = /home/data/psyinf/forrest_gump/collection/aligned
+getenv = True
+request_cpus = 1
+request_memory = 2000
+should_transfer_files = NO
+transfer_executable = False
+executable = /home/data/psyinf/forrest_gump/collection/aligned/code/calc_tsnr
+
+arguments = sub-01/in_bold3Tp2/sub-01_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-01/in_bold3Tp2/sub-01_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-02/in_bold3Tp2/sub-02_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-03/in_bold3Tp2/sub-03_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-04/in_bold3Tp2/sub-04_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-05/in_bold3Tp2/sub-05_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-06/in_bold3Tp2/sub-06_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-09/in_bold3Tp2/sub-09_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-10/in_bold3Tp2/sub-10_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-14/in_bold3Tp2/sub-14_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-15/in_bold3Tp2/sub-15_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-16/in_bold3Tp2/sub-16_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-17/in_bold3Tp2/sub-17_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-18/in_bold3Tp2/sub-18_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-19/in_bold3Tp2/sub-19_task-retmap_run-4_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-avmovie_run-1_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-avmovie_run-2_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-avmovie_run-3_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-avmovie_run-4_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-avmovie_run-5_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-avmovie_run-6_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-avmovie_run-7_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-avmovie_run-8_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-movielocalizer_run-1_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-objectcategories_run-1_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-objectcategories_run-2_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-objectcategories_run-3_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-objectcategories_run-4_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-retmap_run-1_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-retmap_run-2_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-retmap_run-3_bold.nii.gz
+queue
+arguments = sub-20/in_bold3Tp2/sub-20_task-retmap_run-4_bold.nii.gz
+queue
