@@ -38,7 +38,7 @@ ignore=$FSLDIR
 
 inbold=$(readlink -f $1) || true
 ref=$(readlink -f $2) || true
-outbold=$(readlink -f $3)
+outbold=$(readlink -m $3)
 initflirtopts=${4:--dof 6}
 
 if [ -z "$inbold" ]; then
