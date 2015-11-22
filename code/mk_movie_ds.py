@@ -46,7 +46,7 @@ def movie_dataset(subj, task, label, **kwargs):
     #       2,
     #       'avmovie',
     #       'bold3Tp2',
-    #       mask='raw/tnt/sub-02/bold3Tp2/brain_mask.nii.gz')
+    #       mask='src/tnt/sub-02/bold3Tp2/brain_mask.nii.gz')
     cur_max_time = 0
     segments = []
     if not 'add_sa' in kwargs:
