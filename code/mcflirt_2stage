@@ -5,7 +5,7 @@
 set -e
 set -u
 
-if [ $# -ne 3 ]; then
+if [ $# -lt 3 ]; then
   cat << EOT
 This script implements MCFLIRT-based motion correction using an dedicated
 target image. The difference to using MCFLIRT's --reffile option is that
@@ -39,7 +39,8 @@ ignore=$FSLDIR
 inbold=$(readlink -f $1) || true
 ref=$(readlink -f $2) || true
 outbold=$(readlink -m $3)
-initflirtopts=${4:--dof 6}
+refsmooth=${4:-0}
+initflirtopts=${5:--dof 6}
 
 if [ -z "$inbold" ]; then
   echo "File not found '$1'"
@@ -57,12 +58,19 @@ wdir=$(mktemp -d --suffix=2stagemc)
 trap "rm -rf $wdir" SIGINT SIGTERM
 cd "$wdir"
 
-$FSLDIR/bin/fslmaths "$inbold" -Tmean meanbold -odt input
-$FSLDIR/bin/bet meanbold.nii.gz meanbold_brain -F
-$FSLDIR/bin/flirt ${initflirtopts} -in meanbold_brain -ref "$ref" -omat meanbold2brain.mat
-$FSLDIR/bin/mcflirt -in "$inbold" -reffile meanbold_brain -mats -plots -out mc
+
+# motion correction reference
+$FSLDIR/bin/fslmaths "$inbold" -Tmean bold -odt input
+# perform motion correction
+$FSLDIR/bin/mcflirt -in "$inbold" -reffile bold -mats -plots -out mc
+# mean bold volume after MC
+$FSLDIR/bin/fslmaths mc -Tmean meanbold_mc -odt input
+$FSLDIR/bin/bet meanbold_mc bold_brain
+# smooth reference volume somewhat
+$FSLDIR/bin/fslmaths "$ref" -s $(echo "scale=4; $refsmooth / 2.355" | bc) refsmooth
+$FSLDIR/bin/flirt ${initflirtopts} -in bold_brain -ref refsmooth -omat bold2brain.mat
 cp mc.par "$($FSLDIR/bin/remove_ext "$outbold")_mcparams.txt"
-for i in mc.mat/MAT*; do convert_xfm -omat mc.mat/tmpl_$(basename $i) -concat meanbold2brain.mat $i; done
+for i in mc.mat/MAT*; do convert_xfm -omat mc.mat/tmpl_$(basename $i) -concat bold2brain.mat $i; done
 mkdir bold
 $FSLDIR/bin/fslsplit "$inbold" bold/
 mkdir mc
