@@ -1,0 +1,238 @@
+universe = vanilla
+output = condor_logs/$(CLUSTER).$(PROCESS).out
+error = condor_logs/$(CLUSTER).$(PROCESS).err
+log = condor_logs/$(CLUSTER).$(PROCESS).log
+initialdir = /home/data/psyinf/forrest_gump/collection/aligned
+getenv = True
+request_cpus = 1
+request_memory = 4000
+should_transfer_files = NO
+transfer_executable = False
+executable = code/reslice_7to3
+
+#src/phase1/sub-01/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-01/bold7Tp1/brain.nii.gz src/tnt/sub-01/bold3Tp2/brain.nii.gz src/tnt/sub-01/bold7Tp1/in_bold3Tp2/xfm_6dof.mat test.nii.gz
+
+arguments = "src/phase1/sub-01/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-01/bold7Tp1/brain.nii.gz src/tnt/sub-01/bold3Tp2/brain.nii.gz src/tnt/sub-01/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-01/in_bold3Tp2/sub-01_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-01/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-01/bold7Tp1/brain.nii.gz src/tnt/sub-01/bold3Tp2/brain.nii.gz src/tnt/sub-01/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-01/in_bold3Tp2/sub-01_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-01/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-01/bold7Tp1/brain.nii.gz src/tnt/sub-01/bold3Tp2/brain.nii.gz src/tnt/sub-01/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-01/in_bold3Tp2/sub-01_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-01/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-01/bold7Tp1/brain.nii.gz src/tnt/sub-01/bold3Tp2/brain.nii.gz src/tnt/sub-01/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-01/in_bold3Tp2/sub-01_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-01/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-01/bold7Tp1/brain.nii.gz src/tnt/sub-01/bold3Tp2/brain.nii.gz src/tnt/sub-01/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-01/in_bold3Tp2/sub-01_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-01/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-01/bold7Tp1/brain.nii.gz src/tnt/sub-01/bold3Tp2/brain.nii.gz src/tnt/sub-01/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-01/in_bold3Tp2/sub-01_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-01/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-01/bold7Tp1/brain.nii.gz src/tnt/sub-01/bold3Tp2/brain.nii.gz src/tnt/sub-01/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-01/in_bold3Tp2/sub-01_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-01/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-01/bold7Tp1/brain.nii.gz src/tnt/sub-01/bold3Tp2/brain.nii.gz src/tnt/sub-01/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-01/in_bold3Tp2/sub-01_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-02/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-02/bold7Tp1/brain.nii.gz src/tnt/sub-02/bold3Tp2/brain.nii.gz src/tnt/sub-02/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-02/in_bold3Tp2/sub-02_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-02/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-02/bold7Tp1/brain.nii.gz src/tnt/sub-02/bold3Tp2/brain.nii.gz src/tnt/sub-02/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-02/in_bold3Tp2/sub-02_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-02/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-02/bold7Tp1/brain.nii.gz src/tnt/sub-02/bold3Tp2/brain.nii.gz src/tnt/sub-02/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-02/in_bold3Tp2/sub-02_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-02/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-02/bold7Tp1/brain.nii.gz src/tnt/sub-02/bold3Tp2/brain.nii.gz src/tnt/sub-02/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-02/in_bold3Tp2/sub-02_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-02/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-02/bold7Tp1/brain.nii.gz src/tnt/sub-02/bold3Tp2/brain.nii.gz src/tnt/sub-02/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-02/in_bold3Tp2/sub-02_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-02/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-02/bold7Tp1/brain.nii.gz src/tnt/sub-02/bold3Tp2/brain.nii.gz src/tnt/sub-02/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-02/in_bold3Tp2/sub-02_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-02/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-02/bold7Tp1/brain.nii.gz src/tnt/sub-02/bold3Tp2/brain.nii.gz src/tnt/sub-02/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-02/in_bold3Tp2/sub-02_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-02/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-02/bold7Tp1/brain.nii.gz src/tnt/sub-02/bold3Tp2/brain.nii.gz src/tnt/sub-02/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-02/in_bold3Tp2/sub-02_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-03/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-03/bold7Tp1/brain.nii.gz src/tnt/sub-03/bold3Tp2/brain.nii.gz src/tnt/sub-03/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-03/in_bold3Tp2/sub-03_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-03/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-03/bold7Tp1/brain.nii.gz src/tnt/sub-03/bold3Tp2/brain.nii.gz src/tnt/sub-03/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-03/in_bold3Tp2/sub-03_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-03/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-03/bold7Tp1/brain.nii.gz src/tnt/sub-03/bold3Tp2/brain.nii.gz src/tnt/sub-03/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-03/in_bold3Tp2/sub-03_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-03/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-03/bold7Tp1/brain.nii.gz src/tnt/sub-03/bold3Tp2/brain.nii.gz src/tnt/sub-03/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-03/in_bold3Tp2/sub-03_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-03/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-03/bold7Tp1/brain.nii.gz src/tnt/sub-03/bold3Tp2/brain.nii.gz src/tnt/sub-03/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-03/in_bold3Tp2/sub-03_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-03/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-03/bold7Tp1/brain.nii.gz src/tnt/sub-03/bold3Tp2/brain.nii.gz src/tnt/sub-03/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-03/in_bold3Tp2/sub-03_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-03/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-03/bold7Tp1/brain.nii.gz src/tnt/sub-03/bold3Tp2/brain.nii.gz src/tnt/sub-03/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-03/in_bold3Tp2/sub-03_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-03/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-03/bold7Tp1/brain.nii.gz src/tnt/sub-03/bold3Tp2/brain.nii.gz src/tnt/sub-03/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-03/in_bold3Tp2/sub-03_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-04/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-04/bold7Tp1/brain.nii.gz src/tnt/sub-04/bold3Tp2/brain.nii.gz src/tnt/sub-04/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-04/in_bold3Tp2/sub-04_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-04/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-04/bold7Tp1/brain.nii.gz src/tnt/sub-04/bold3Tp2/brain.nii.gz src/tnt/sub-04/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-04/in_bold3Tp2/sub-04_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-04/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-04/bold7Tp1/brain.nii.gz src/tnt/sub-04/bold3Tp2/brain.nii.gz src/tnt/sub-04/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-04/in_bold3Tp2/sub-04_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-04/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-04/bold7Tp1/brain.nii.gz src/tnt/sub-04/bold3Tp2/brain.nii.gz src/tnt/sub-04/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-04/in_bold3Tp2/sub-04_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-04/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-04/bold7Tp1/brain.nii.gz src/tnt/sub-04/bold3Tp2/brain.nii.gz src/tnt/sub-04/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-04/in_bold3Tp2/sub-04_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-04/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-04/bold7Tp1/brain.nii.gz src/tnt/sub-04/bold3Tp2/brain.nii.gz src/tnt/sub-04/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-04/in_bold3Tp2/sub-04_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-04/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-04/bold7Tp1/brain.nii.gz src/tnt/sub-04/bold3Tp2/brain.nii.gz src/tnt/sub-04/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-04/in_bold3Tp2/sub-04_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-04/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-04/bold7Tp1/brain.nii.gz src/tnt/sub-04/bold3Tp2/brain.nii.gz src/tnt/sub-04/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-04/in_bold3Tp2/sub-04_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-05/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-05/bold7Tp1/brain.nii.gz src/tnt/sub-05/bold3Tp2/brain.nii.gz src/tnt/sub-05/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-05/in_bold3Tp2/sub-05_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-05/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-05/bold7Tp1/brain.nii.gz src/tnt/sub-05/bold3Tp2/brain.nii.gz src/tnt/sub-05/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-05/in_bold3Tp2/sub-05_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-05/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-05/bold7Tp1/brain.nii.gz src/tnt/sub-05/bold3Tp2/brain.nii.gz src/tnt/sub-05/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-05/in_bold3Tp2/sub-05_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-05/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-05/bold7Tp1/brain.nii.gz src/tnt/sub-05/bold3Tp2/brain.nii.gz src/tnt/sub-05/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-05/in_bold3Tp2/sub-05_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-05/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-05/bold7Tp1/brain.nii.gz src/tnt/sub-05/bold3Tp2/brain.nii.gz src/tnt/sub-05/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-05/in_bold3Tp2/sub-05_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-05/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-05/bold7Tp1/brain.nii.gz src/tnt/sub-05/bold3Tp2/brain.nii.gz src/tnt/sub-05/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-05/in_bold3Tp2/sub-05_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-05/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-05/bold7Tp1/brain.nii.gz src/tnt/sub-05/bold3Tp2/brain.nii.gz src/tnt/sub-05/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-05/in_bold3Tp2/sub-05_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-05/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-05/bold7Tp1/brain.nii.gz src/tnt/sub-05/bold3Tp2/brain.nii.gz src/tnt/sub-05/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-05/in_bold3Tp2/sub-05_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-06/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-06/bold7Tp1/brain.nii.gz src/tnt/sub-06/bold3Tp2/brain.nii.gz src/tnt/sub-06/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-06/in_bold3Tp2/sub-06_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-06/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-06/bold7Tp1/brain.nii.gz src/tnt/sub-06/bold3Tp2/brain.nii.gz src/tnt/sub-06/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-06/in_bold3Tp2/sub-06_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-06/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-06/bold7Tp1/brain.nii.gz src/tnt/sub-06/bold3Tp2/brain.nii.gz src/tnt/sub-06/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-06/in_bold3Tp2/sub-06_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-06/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-06/bold7Tp1/brain.nii.gz src/tnt/sub-06/bold3Tp2/brain.nii.gz src/tnt/sub-06/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-06/in_bold3Tp2/sub-06_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-06/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-06/bold7Tp1/brain.nii.gz src/tnt/sub-06/bold3Tp2/brain.nii.gz src/tnt/sub-06/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-06/in_bold3Tp2/sub-06_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-06/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-06/bold7Tp1/brain.nii.gz src/tnt/sub-06/bold3Tp2/brain.nii.gz src/tnt/sub-06/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-06/in_bold3Tp2/sub-06_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-06/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-06/bold7Tp1/brain.nii.gz src/tnt/sub-06/bold3Tp2/brain.nii.gz src/tnt/sub-06/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-06/in_bold3Tp2/sub-06_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-06/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-06/bold7Tp1/brain.nii.gz src/tnt/sub-06/bold3Tp2/brain.nii.gz src/tnt/sub-06/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-06/in_bold3Tp2/sub-06_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-09/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-09/bold7Tp1/brain.nii.gz src/tnt/sub-09/bold3Tp2/brain.nii.gz src/tnt/sub-09/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-09/in_bold3Tp2/sub-09_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-09/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-09/bold7Tp1/brain.nii.gz src/tnt/sub-09/bold3Tp2/brain.nii.gz src/tnt/sub-09/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-09/in_bold3Tp2/sub-09_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-09/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-09/bold7Tp1/brain.nii.gz src/tnt/sub-09/bold3Tp2/brain.nii.gz src/tnt/sub-09/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-09/in_bold3Tp2/sub-09_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-09/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-09/bold7Tp1/brain.nii.gz src/tnt/sub-09/bold3Tp2/brain.nii.gz src/tnt/sub-09/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-09/in_bold3Tp2/sub-09_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-09/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-09/bold7Tp1/brain.nii.gz src/tnt/sub-09/bold3Tp2/brain.nii.gz src/tnt/sub-09/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-09/in_bold3Tp2/sub-09_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-09/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-09/bold7Tp1/brain.nii.gz src/tnt/sub-09/bold3Tp2/brain.nii.gz src/tnt/sub-09/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-09/in_bold3Tp2/sub-09_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-09/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-09/bold7Tp1/brain.nii.gz src/tnt/sub-09/bold3Tp2/brain.nii.gz src/tnt/sub-09/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-09/in_bold3Tp2/sub-09_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-09/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-09/bold7Tp1/brain.nii.gz src/tnt/sub-09/bold3Tp2/brain.nii.gz src/tnt/sub-09/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-09/in_bold3Tp2/sub-09_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-14/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-14/bold7Tp1/brain.nii.gz src/tnt/sub-14/bold3Tp2/brain.nii.gz src/tnt/sub-14/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-14/in_bold3Tp2/sub-14_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-14/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-14/bold7Tp1/brain.nii.gz src/tnt/sub-14/bold3Tp2/brain.nii.gz src/tnt/sub-14/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-14/in_bold3Tp2/sub-14_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-14/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-14/bold7Tp1/brain.nii.gz src/tnt/sub-14/bold3Tp2/brain.nii.gz src/tnt/sub-14/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-14/in_bold3Tp2/sub-14_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-14/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-14/bold7Tp1/brain.nii.gz src/tnt/sub-14/bold3Tp2/brain.nii.gz src/tnt/sub-14/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-14/in_bold3Tp2/sub-14_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-14/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-14/bold7Tp1/brain.nii.gz src/tnt/sub-14/bold3Tp2/brain.nii.gz src/tnt/sub-14/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-14/in_bold3Tp2/sub-14_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-14/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-14/bold7Tp1/brain.nii.gz src/tnt/sub-14/bold3Tp2/brain.nii.gz src/tnt/sub-14/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-14/in_bold3Tp2/sub-14_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-14/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-14/bold7Tp1/brain.nii.gz src/tnt/sub-14/bold3Tp2/brain.nii.gz src/tnt/sub-14/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-14/in_bold3Tp2/sub-14_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-14/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-14/bold7Tp1/brain.nii.gz src/tnt/sub-14/bold3Tp2/brain.nii.gz src/tnt/sub-14/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-14/in_bold3Tp2/sub-14_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-15/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-15/bold7Tp1/brain.nii.gz src/tnt/sub-15/bold3Tp2/brain.nii.gz src/tnt/sub-15/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-15/in_bold3Tp2/sub-15_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-15/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-15/bold7Tp1/brain.nii.gz src/tnt/sub-15/bold3Tp2/brain.nii.gz src/tnt/sub-15/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-15/in_bold3Tp2/sub-15_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-15/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-15/bold7Tp1/brain.nii.gz src/tnt/sub-15/bold3Tp2/brain.nii.gz src/tnt/sub-15/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-15/in_bold3Tp2/sub-15_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-15/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-15/bold7Tp1/brain.nii.gz src/tnt/sub-15/bold3Tp2/brain.nii.gz src/tnt/sub-15/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-15/in_bold3Tp2/sub-15_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-15/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-15/bold7Tp1/brain.nii.gz src/tnt/sub-15/bold3Tp2/brain.nii.gz src/tnt/sub-15/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-15/in_bold3Tp2/sub-15_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-15/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-15/bold7Tp1/brain.nii.gz src/tnt/sub-15/bold3Tp2/brain.nii.gz src/tnt/sub-15/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-15/in_bold3Tp2/sub-15_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-15/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-15/bold7Tp1/brain.nii.gz src/tnt/sub-15/bold3Tp2/brain.nii.gz src/tnt/sub-15/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-15/in_bold3Tp2/sub-15_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-15/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-15/bold7Tp1/brain.nii.gz src/tnt/sub-15/bold3Tp2/brain.nii.gz src/tnt/sub-15/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-15/in_bold3Tp2/sub-15_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-16/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-16/bold7Tp1/brain.nii.gz src/tnt/sub-16/bold3Tp2/brain.nii.gz src/tnt/sub-16/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-16/in_bold3Tp2/sub-16_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-16/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-16/bold7Tp1/brain.nii.gz src/tnt/sub-16/bold3Tp2/brain.nii.gz src/tnt/sub-16/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-16/in_bold3Tp2/sub-16_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-16/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-16/bold7Tp1/brain.nii.gz src/tnt/sub-16/bold3Tp2/brain.nii.gz src/tnt/sub-16/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-16/in_bold3Tp2/sub-16_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-16/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-16/bold7Tp1/brain.nii.gz src/tnt/sub-16/bold3Tp2/brain.nii.gz src/tnt/sub-16/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-16/in_bold3Tp2/sub-16_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-16/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-16/bold7Tp1/brain.nii.gz src/tnt/sub-16/bold3Tp2/brain.nii.gz src/tnt/sub-16/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-16/in_bold3Tp2/sub-16_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-16/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-16/bold7Tp1/brain.nii.gz src/tnt/sub-16/bold3Tp2/brain.nii.gz src/tnt/sub-16/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-16/in_bold3Tp2/sub-16_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-16/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-16/bold7Tp1/brain.nii.gz src/tnt/sub-16/bold3Tp2/brain.nii.gz src/tnt/sub-16/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-16/in_bold3Tp2/sub-16_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-16/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-16/bold7Tp1/brain.nii.gz src/tnt/sub-16/bold3Tp2/brain.nii.gz src/tnt/sub-16/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-16/in_bold3Tp2/sub-16_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-17/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-17/bold7Tp1/brain.nii.gz src/tnt/sub-17/bold3Tp2/brain.nii.gz src/tnt/sub-17/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-17/in_bold3Tp2/sub-17_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-17/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-17/bold7Tp1/brain.nii.gz src/tnt/sub-17/bold3Tp2/brain.nii.gz src/tnt/sub-17/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-17/in_bold3Tp2/sub-17_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-17/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-17/bold7Tp1/brain.nii.gz src/tnt/sub-17/bold3Tp2/brain.nii.gz src/tnt/sub-17/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-17/in_bold3Tp2/sub-17_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-17/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-17/bold7Tp1/brain.nii.gz src/tnt/sub-17/bold3Tp2/brain.nii.gz src/tnt/sub-17/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-17/in_bold3Tp2/sub-17_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-17/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-17/bold7Tp1/brain.nii.gz src/tnt/sub-17/bold3Tp2/brain.nii.gz src/tnt/sub-17/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-17/in_bold3Tp2/sub-17_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-17/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-17/bold7Tp1/brain.nii.gz src/tnt/sub-17/bold3Tp2/brain.nii.gz src/tnt/sub-17/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-17/in_bold3Tp2/sub-17_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-17/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-17/bold7Tp1/brain.nii.gz src/tnt/sub-17/bold3Tp2/brain.nii.gz src/tnt/sub-17/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-17/in_bold3Tp2/sub-17_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-17/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-17/bold7Tp1/brain.nii.gz src/tnt/sub-17/bold3Tp2/brain.nii.gz src/tnt/sub-17/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-17/in_bold3Tp2/sub-17_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-18/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-18/bold7Tp1/brain.nii.gz src/tnt/sub-18/bold3Tp2/brain.nii.gz src/tnt/sub-18/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-18/in_bold3Tp2/sub-18_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-18/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-18/bold7Tp1/brain.nii.gz src/tnt/sub-18/bold3Tp2/brain.nii.gz src/tnt/sub-18/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-18/in_bold3Tp2/sub-18_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-18/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-18/bold7Tp1/brain.nii.gz src/tnt/sub-18/bold3Tp2/brain.nii.gz src/tnt/sub-18/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-18/in_bold3Tp2/sub-18_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-18/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-18/bold7Tp1/brain.nii.gz src/tnt/sub-18/bold3Tp2/brain.nii.gz src/tnt/sub-18/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-18/in_bold3Tp2/sub-18_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-18/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-18/bold7Tp1/brain.nii.gz src/tnt/sub-18/bold3Tp2/brain.nii.gz src/tnt/sub-18/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-18/in_bold3Tp2/sub-18_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-18/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-18/bold7Tp1/brain.nii.gz src/tnt/sub-18/bold3Tp2/brain.nii.gz src/tnt/sub-18/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-18/in_bold3Tp2/sub-18_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-18/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-18/bold7Tp1/brain.nii.gz src/tnt/sub-18/bold3Tp2/brain.nii.gz src/tnt/sub-18/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-18/in_bold3Tp2/sub-18_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-18/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-18/bold7Tp1/brain.nii.gz src/tnt/sub-18/bold3Tp2/brain.nii.gz src/tnt/sub-18/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-18/in_bold3Tp2/sub-18_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-19/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-19/bold7Tp1/brain.nii.gz src/tnt/sub-19/bold3Tp2/brain.nii.gz src/tnt/sub-19/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-19/in_bold3Tp2/sub-19_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-19/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-19/bold7Tp1/brain.nii.gz src/tnt/sub-19/bold3Tp2/brain.nii.gz src/tnt/sub-19/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-19/in_bold3Tp2/sub-19_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-19/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-19/bold7Tp1/brain.nii.gz src/tnt/sub-19/bold3Tp2/brain.nii.gz src/tnt/sub-19/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-19/in_bold3Tp2/sub-19_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-19/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-19/bold7Tp1/brain.nii.gz src/tnt/sub-19/bold3Tp2/brain.nii.gz src/tnt/sub-19/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-19/in_bold3Tp2/sub-19_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-19/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-19/bold7Tp1/brain.nii.gz src/tnt/sub-19/bold3Tp2/brain.nii.gz src/tnt/sub-19/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-19/in_bold3Tp2/sub-19_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-19/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-19/bold7Tp1/brain.nii.gz src/tnt/sub-19/bold3Tp2/brain.nii.gz src/tnt/sub-19/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-19/in_bold3Tp2/sub-19_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-19/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-19/bold7Tp1/brain.nii.gz src/tnt/sub-19/bold3Tp2/brain.nii.gz src/tnt/sub-19/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-19/in_bold3Tp2/sub-19_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-19/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-19/bold7Tp1/brain.nii.gz src/tnt/sub-19/bold3Tp2/brain.nii.gz src/tnt/sub-19/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-19/in_bold3Tp2/sub-19_task-aomovie_run-8_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-20/BOLD/task001_run001/bold_dico.nii.gz src/tnt/sub-20/bold7Tp1/brain.nii.gz src/tnt/sub-20/bold3Tp2/brain.nii.gz src/tnt/sub-20/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-20/in_bold3Tp2/sub-20_task-aomovie_run-1_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-20/BOLD/task001_run002/bold_dico.nii.gz src/tnt/sub-20/bold7Tp1/brain.nii.gz src/tnt/sub-20/bold3Tp2/brain.nii.gz src/tnt/sub-20/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-20/in_bold3Tp2/sub-20_task-aomovie_run-2_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-20/BOLD/task001_run003/bold_dico.nii.gz src/tnt/sub-20/bold7Tp1/brain.nii.gz src/tnt/sub-20/bold3Tp2/brain.nii.gz src/tnt/sub-20/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-20/in_bold3Tp2/sub-20_task-aomovie_run-3_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-20/BOLD/task001_run004/bold_dico.nii.gz src/tnt/sub-20/bold7Tp1/brain.nii.gz src/tnt/sub-20/bold3Tp2/brain.nii.gz src/tnt/sub-20/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-20/in_bold3Tp2/sub-20_task-aomovie_run-4_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-20/BOLD/task001_run005/bold_dico.nii.gz src/tnt/sub-20/bold7Tp1/brain.nii.gz src/tnt/sub-20/bold3Tp2/brain.nii.gz src/tnt/sub-20/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-20/in_bold3Tp2/sub-20_task-aomovie_run-5_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-20/BOLD/task001_run006/bold_dico.nii.gz src/tnt/sub-20/bold7Tp1/brain.nii.gz src/tnt/sub-20/bold3Tp2/brain.nii.gz src/tnt/sub-20/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-20/in_bold3Tp2/sub-20_task-aomovie_run-6_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-20/BOLD/task001_run007/bold_dico.nii.gz src/tnt/sub-20/bold7Tp1/brain.nii.gz src/tnt/sub-20/bold3Tp2/brain.nii.gz src/tnt/sub-20/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-20/in_bold3Tp2/sub-20_task-aomovie_run-7_bold.nii.gz"
+queue
+arguments = "src/phase1/sub-20/BOLD/task001_run008/bold_dico.nii.gz src/tnt/sub-20/bold7Tp1/brain.nii.gz src/tnt/sub-20/bold3Tp2/brain.nii.gz src/tnt/sub-20/bold7Tp1/in_bold3Tp2/xfm_6dof.mat sub-20/in_bold3Tp2/sub-20_task-aomovie_run-8_bold.nii.gz"
+queue

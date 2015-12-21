@@ -4,3 +4,6 @@
 [submodule "raw/tnt"]
 	path = src/tnt
 	url = ../tnt
+[submodule "src/phase1"]
+	path = src/phase1
+	url = ../phase1

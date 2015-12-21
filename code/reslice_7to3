@@ -1,0 +1,41 @@
+#!/bin/bash
+# Author: Michael Hanke <michael.hanke@gmail.com>
+# License: MIT
+
+set -e
+set -u
+
+# fake test for FSL
+ignore=$FSLDIR
+
+inbold=$(readlink -f $1) || true
+initref=$(readlink -f $2) || true
+finalref=$(readlink -f $3) || true
+finalxfm=$(readlink -f $4) || true
+outbold=$(readlink -m $5)
+initflirtopts=${6:--dof 6}
+
+for f in "$inbold" "$initref" "$finalref" "$finalxfm"; do
+    if [ -z "$f" ]; then
+      echo "File not found '$1'"
+      exit 1
+    fi
+done
+
+outbolddir=$(dirname "${outbold}")
+mkdir -p "$outbolddir"
+
+wdir=$(mktemp -d --suffix=7to3reslice)
+echo $wdir
+trap "rm -rf $wdir" SIGINT SIGTERM
+cd "$wdir"
+
+$FSLDIR/bin/fslroi "$inbold" bold 0 1
+$FSLDIR/bin/bet bold bold_brain -Z -f 0.1
+$FSLDIR/bin/flirt ${initflirtopts} -in bold_brain -ref $initref -omat bold2brain.mat
+$FSLDIR/bin/convert_xfm -omat bold2final.mat -concat "$finalxfm" bold2brain.mat
+#$FSLDIR/bin/flirt -in bold_brain -ref "$finalref" -applyxfm -init bold2final.mat -out "$outbold" -interp sinc
+$FSLDIR/bin/flirt -in "$inbold" -ref "$finalref" -applyxfm -init bold2final.mat -out "$outbold" -interp sinc
+
+cd -
+rm -rf "$wdir"
