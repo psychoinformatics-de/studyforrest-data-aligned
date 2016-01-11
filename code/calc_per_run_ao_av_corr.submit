@@ -1,0 +1,236 @@
+universe = vanilla
+output = condor_logs/$(CLUSTER).$(PROCESS).out
+error = condor_logs/$(CLUSTER).$(PROCESS).err
+log = condor_logs/$(CLUSTER).$(PROCESS).log
+initialdir = /home/data/psyinf/forrest_gump/collection/aligned
+getenv = True
+request_cpus = 1
+request_memory = 4000
+should_transfer_files = NO
+transfer_executable = False
+executable = /home/data/psyinf/forrest_gump/collection/aligned/code/calc_ao_av_corr
+
+arguments =  1 1
+queue
+arguments =  1 2
+queue
+arguments =  1 3
+queue
+arguments =  1 4
+queue
+arguments =  1 5
+queue
+arguments =  1 6
+queue
+arguments =  1 7
+queue
+arguments =  1 8
+queue
+arguments =  2 1
+queue
+arguments =  2 2
+queue
+arguments =  2 3
+queue
+arguments =  2 4
+queue
+arguments =  2 5
+queue
+arguments =  2 6
+queue
+arguments =  2 7
+queue
+arguments =  2 8
+queue
+arguments =  3 1
+queue
+arguments =  3 2
+queue
+arguments =  3 3
+queue
+arguments =  3 4
+queue
+arguments =  3 5
+queue
+arguments =  3 6
+queue
+arguments =  3 7
+queue
+arguments =  3 8
+queue
+arguments =  4 1
+queue
+arguments =  4 2
+queue
+arguments =  4 3
+queue
+arguments =  4 4
+queue
+arguments =  4 5
+queue
+arguments =  4 6
+queue
+arguments =  4 7
+queue
+arguments =  4 8
+queue
+arguments =  5 1
+queue
+arguments =  5 2
+queue
+arguments =  5 3
+queue
+arguments =  5 4
+queue
+arguments =  5 5
+queue
+arguments =  5 6
+queue
+arguments =  5 7
+queue
+arguments =  5 8
+queue
+arguments =  6 1
+queue
+arguments =  6 2
+queue
+arguments =  6 3
+queue
+arguments =  6 4
+queue
+arguments =  6 5
+queue
+arguments =  6 6
+queue
+arguments =  6 7
+queue
+arguments =  6 8
+queue
+arguments =  9 1
+queue
+arguments =  9 2
+queue
+arguments =  9 3
+queue
+arguments =  9 4
+queue
+arguments =  9 5
+queue
+arguments =  9 6
+queue
+arguments =  9 7
+queue
+arguments =  9 8
+queue
+arguments = 14 1
+queue
+arguments = 14 2
+queue
+arguments = 14 3
+queue
+arguments = 14 4
+queue
+arguments = 14 5
+queue
+arguments = 14 6
+queue
+arguments = 14 7
+queue
+arguments = 14 8
+queue
+arguments = 15 1
+queue
+arguments = 15 2
+queue
+arguments = 15 3
+queue
+arguments = 15 4
+queue
+arguments = 15 5
+queue
+arguments = 15 6
+queue
+arguments = 15 7
+queue
+arguments = 15 8
+queue
+arguments = 16 1
+queue
+arguments = 16 2
+queue
+arguments = 16 3
+queue
+arguments = 16 4
+queue
+arguments = 16 5
+queue
+arguments = 16 6
+queue
+arguments = 16 7
+queue
+arguments = 16 8
+queue
+arguments = 17 1
+queue
+arguments = 17 2
+queue
+arguments = 17 3
+queue
+arguments = 17 4
+queue
+arguments = 17 5
+queue
+arguments = 17 6
+queue
+arguments = 17 7
+queue
+arguments = 17 8
+queue
+arguments = 18 1
+queue
+arguments = 18 2
+queue
+arguments = 18 3
+queue
+arguments = 18 4
+queue
+arguments = 18 5
+queue
+arguments = 18 6
+queue
+arguments = 18 7
+queue
+arguments = 18 8
+queue
+arguments = 19 1
+queue
+arguments = 19 2
+queue
+arguments = 19 3
+queue
+arguments = 19 4
+queue
+arguments = 19 5
+queue
+arguments = 19 6
+queue
+arguments = 19 7
+queue
+arguments = 19 8
+queue
+arguments = 20 1
+queue
+arguments = 20 2
+queue
+arguments = 20 3
+queue
+arguments = 20 4
+queue
+arguments = 20 5
+queue
+arguments = 20 6
+queue
+arguments = 20 7
+queue
+arguments = 20 8
+queue

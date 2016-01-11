@@ -1,0 +1,149 @@
+#!/usr/bin/python
+"""
+FILL ME IN
+"""
+
+import os
+import sys
+
+if not len(sys.argv) == 3:
+    print __doc__
+    sys.exit(1)
+
+# subj
+subj = int(sys.argv[1])
+# run
+run = int(sys.argv[2])
+
+from os.path import join as _opj
+import numpy as np
+from scipy.stats import spearmanr, pearsonr
+from mvpa2.base.hdf5 import h5save
+from nilearn.image import smooth_img
+import nibabel as nb
+from mvpa2.mappers.base import ChainMapper
+from mvpa2.mappers.detrend import PolyDetrendMapper
+from mvpa2.mappers.filters import IIRFilterMapper
+from scipy import signal
+from mvpa2.datasets.mri import fmri_dataset
+from mvpa2.datasets.mri import map2nifti
+
+mc_reg_names = ('mc_xtrans', 'mc_ytrans', 'mc_ztrans', 'mc_xrot',
+                'mc_yrot', 'mc_zrot')
+
+# TODO put this into pymvpa
+def preprocessed_fmri_dataset(
+        bold_fname, preproc_img=None, preproc_ds=None, add_sa=None,
+        **kwargs):
+    """
+
+    Parameters
+    ----------
+    bold_fname : str
+      File name of BOLD scan
+    preproc_img : callable or None
+      See get_bold_run_dataset() documentation
+    preproc_ds : callable or None
+      If not None, this callable will be called with each run bold dataset
+      as an argument before ``modelfx`` is executed. The callable must
+      return a dataset.
+    add_sa : dict or None
+
+    Returns
+    -------
+    Dataset
+    """
+    # open the BOLD image
+    bold_img = nb.load(bold_fname)
+
+    if not preproc_img is None:
+        bold_img = preproc_img(bold_img)
+    # load (and mask) data
+    ds = fmri_dataset(bold_img, **kwargs)
+
+    if not add_sa is None:
+        if hasattr(add_sa, 'dtype') and not add_sa.dtype.names is None:
+            # this is a recarray
+            iter_ = add_sa.dtype.names
+        else:
+            # assume dict
+            iter_ = add_sa
+        for sa in iter_:
+            ds.sa[sa] = add_sa[sa]
+
+    if not preproc_ds is None:
+        ds = preproc_ds(ds)
+    return ds
+
+
+def movie_run_ds(subj, run, task, imgspace, **kwargs):
+    if task == 'aomovie':
+        mcfile = \
+            'src/phase1/sub-%.2i/BOLD/task001_run%.3i/bold_dico_moco.txt' \
+            % (subj, run)
+    elif task == 'avmovie':
+        mcfile = \
+            'sub-%.2i/in_%s/sub-%.2i_task-%s_run-%i_bold_mcparams.txt' \
+            % (subj, imgspace, subj, task, run)
+    else:
+        raise ValueError("unknown task '%s'" % task)
+
+    mc = np.recfromtxt(mcfile, names=mc_reg_names)
+
+    ds = preprocessed_fmri_dataset(
+        'sub-%.2i/in_%s/sub-%.2i_task-%s_run-%i_bold.nii.gz'
+        % (subj, imgspace, subj, task, run),
+        add_sa=mc,
+        **kwargs)
+    return ds
+
+def fisher_xfm(arr, n):
+    arr = np.asanyarray(arr)
+    # z-transform
+    z = 0.5 * np.log((1 + arr) / (1 - arr))
+    # standardize to unit variance
+    z = z / (1. / np.sqrt(n - 3))
+    return z
+
+def smooth(img):
+    # we need to preserve the original header because the smoothing function
+    # fucks the TR up
+    nimg = smooth_img(img, fwhm=4.0)
+    return nb.Nifti1Image(nimg.get_data(),
+                          img.get_affine(),
+                          header=img.get_header())
+
+# template files are intensity normalized, >100 should be a good liberal brain
+# mask
+mask = nb.load(
+    'src/tnt/sub-%.2i/bold7Tp1/in_bold3Tp2/brain.nii.gz' % subj).get_data() > 100
+
+# time series pre-processing
+# regress out motion
+pdm = PolyDetrendMapper(0, opt_regs=mc_reg_names, auto_train=True)
+# spectral filter
+sfm = IIRFilterMapper(*signal.butter(8, (0.016, 0.25), btype='bandpass'))
+tspreproc = ChainMapper([pdm, sfm])
+
+aomovie = movie_run_ds(subj, run, 'aomovie','bold3Tp2',
+    mask=mask, preproc_img=smooth, preproc_ds=tspreproc)
+avmovie = movie_run_ds(subj, run, 'avmovie','bold3Tp2',
+    mask=mask, preproc_img=smooth, preproc_ds=tspreproc)
+
+# compute voxelwise correlation between audio and audio-visual data
+sr = np.array(
+    [spearmanr(aomovie.samples[:,i], avmovie.samples[:,i])[0]
+        for i in xrange(aomovie.nfeatures)])
+pr = np.array(
+    [pearsonr(aomovie.samples[:,i], avmovie.samples[:,i])[0]
+        for i in xrange(aomovie.nfeatures)])
+# Fisher transformation to yield normal distribution
+sz = fisher_xfm(sr, len(aomovie))
+pz = fisher_xfm(pr, len(aomovie))
+
+nb.save(map2nifti(aomovie, sz),
+        'sub-%.2i/in_bold3Tp2/sub-%.2i_aoav_run-%i_spearmanZ.nii.gz'
+        % (subj, subj, run))
+nb.save(map2nifti(aomovie, pz),
+        'sub-%.2i/in_bold3Tp2/sub-%.2i_aoav_run-%i_pearsonZ.nii.gz'
+        % (subj, subj, run))
