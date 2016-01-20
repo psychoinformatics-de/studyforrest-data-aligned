@@ -1,9 +1,9 @@
 [submodule "raw/phase2"]
 	path = src/phase2
-	url = ../phase2
+	url = https://github.com/psychoinformatics-de/studyforrest-data-phase2.git
 [submodule "raw/tnt"]
 	path = src/tnt
-	url = ../tnt
+	url = https://github.com/psychoinformatics-de/studyforrest-data-templatetransforms.git
 [submodule "src/phase1"]
 	path = src/phase1
 	url = ../phase1
