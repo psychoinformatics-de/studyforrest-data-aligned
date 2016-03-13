@@ -36,13 +36,13 @@ arguments = sub-01/in_bold3Tp2/sub-01_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-01/in_bold3Tp2/sub-01_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-01/in_bold3Tp2/sub-01_task-retmap_run-1_bold.nii.gz
+arguments = sub-01/in_bold3Tp2/sub-01_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-01/in_bold3Tp2/sub-01_task-retmap_run-2_bold.nii.gz
+arguments = sub-01/in_bold3Tp2/sub-01_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-01/in_bold3Tp2/sub-01_task-retmap_run-3_bold.nii.gz
+arguments = sub-01/in_bold3Tp2/sub-01_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-01/in_bold3Tp2/sub-01_task-retmap_run-4_bold.nii.gz
+arguments = sub-01/in_bold3Tp2/sub-01_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-02/in_bold3Tp2/sub-02_task-avmovie_run-1_bold.nii.gz
 queue
@@ -70,13 +70,13 @@ arguments = sub-02/in_bold3Tp2/sub-02_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-02/in_bold3Tp2/sub-02_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-02/in_bold3Tp2/sub-02_task-retmap_run-1_bold.nii.gz
+arguments = sub-02/in_bold3Tp2/sub-02_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-02/in_bold3Tp2/sub-02_task-retmap_run-2_bold.nii.gz
+arguments = sub-02/in_bold3Tp2/sub-02_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-02/in_bold3Tp2/sub-02_task-retmap_run-3_bold.nii.gz
+arguments = sub-02/in_bold3Tp2/sub-02_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-02/in_bold3Tp2/sub-02_task-retmap_run-4_bold.nii.gz
+arguments = sub-02/in_bold3Tp2/sub-02_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-03/in_bold3Tp2/sub-03_task-avmovie_run-1_bold.nii.gz
 queue
@@ -104,13 +104,13 @@ arguments = sub-03/in_bold3Tp2/sub-03_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-03/in_bold3Tp2/sub-03_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-03/in_bold3Tp2/sub-03_task-retmap_run-1_bold.nii.gz
+arguments = sub-03/in_bold3Tp2/sub-03_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-03/in_bold3Tp2/sub-03_task-retmap_run-2_bold.nii.gz
+arguments = sub-03/in_bold3Tp2/sub-03_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-03/in_bold3Tp2/sub-03_task-retmap_run-3_bold.nii.gz
+arguments = sub-03/in_bold3Tp2/sub-03_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-03/in_bold3Tp2/sub-03_task-retmap_run-4_bold.nii.gz
+arguments = sub-03/in_bold3Tp2/sub-03_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-04/in_bold3Tp2/sub-04_task-avmovie_run-1_bold.nii.gz
 queue
@@ -138,13 +138,13 @@ arguments = sub-04/in_bold3Tp2/sub-04_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-04/in_bold3Tp2/sub-04_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-04/in_bold3Tp2/sub-04_task-retmap_run-1_bold.nii.gz
+arguments = sub-04/in_bold3Tp2/sub-04_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-04/in_bold3Tp2/sub-04_task-retmap_run-2_bold.nii.gz
+arguments = sub-04/in_bold3Tp2/sub-04_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-04/in_bold3Tp2/sub-04_task-retmap_run-3_bold.nii.gz
+arguments = sub-04/in_bold3Tp2/sub-04_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-04/in_bold3Tp2/sub-04_task-retmap_run-4_bold.nii.gz
+arguments = sub-04/in_bold3Tp2/sub-04_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-05/in_bold3Tp2/sub-05_task-avmovie_run-1_bold.nii.gz
 queue
@@ -172,13 +172,13 @@ arguments = sub-05/in_bold3Tp2/sub-05_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-05/in_bold3Tp2/sub-05_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-05/in_bold3Tp2/sub-05_task-retmap_run-1_bold.nii.gz
+arguments = sub-05/in_bold3Tp2/sub-05_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-05/in_bold3Tp2/sub-05_task-retmap_run-2_bold.nii.gz
+arguments = sub-05/in_bold3Tp2/sub-05_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-05/in_bold3Tp2/sub-05_task-retmap_run-3_bold.nii.gz
+arguments = sub-05/in_bold3Tp2/sub-05_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-05/in_bold3Tp2/sub-05_task-retmap_run-4_bold.nii.gz
+arguments = sub-05/in_bold3Tp2/sub-05_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-06/in_bold3Tp2/sub-06_task-avmovie_run-1_bold.nii.gz
 queue
@@ -206,13 +206,13 @@ arguments = sub-06/in_bold3Tp2/sub-06_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-06/in_bold3Tp2/sub-06_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-06/in_bold3Tp2/sub-06_task-retmap_run-1_bold.nii.gz
+arguments = sub-06/in_bold3Tp2/sub-06_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-06/in_bold3Tp2/sub-06_task-retmap_run-2_bold.nii.gz
+arguments = sub-06/in_bold3Tp2/sub-06_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-06/in_bold3Tp2/sub-06_task-retmap_run-3_bold.nii.gz
+arguments = sub-06/in_bold3Tp2/sub-06_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-06/in_bold3Tp2/sub-06_task-retmap_run-4_bold.nii.gz
+arguments = sub-06/in_bold3Tp2/sub-06_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-09/in_bold3Tp2/sub-09_task-avmovie_run-1_bold.nii.gz
 queue
@@ -240,13 +240,13 @@ arguments = sub-09/in_bold3Tp2/sub-09_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-09/in_bold3Tp2/sub-09_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-09/in_bold3Tp2/sub-09_task-retmap_run-1_bold.nii.gz
+arguments = sub-09/in_bold3Tp2/sub-09_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-09/in_bold3Tp2/sub-09_task-retmap_run-2_bold.nii.gz
+arguments = sub-09/in_bold3Tp2/sub-09_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-09/in_bold3Tp2/sub-09_task-retmap_run-3_bold.nii.gz
+arguments = sub-09/in_bold3Tp2/sub-09_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-09/in_bold3Tp2/sub-09_task-retmap_run-4_bold.nii.gz
+arguments = sub-09/in_bold3Tp2/sub-09_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-10/in_bold3Tp2/sub-10_task-avmovie_run-1_bold.nii.gz
 queue
@@ -274,13 +274,13 @@ arguments = sub-10/in_bold3Tp2/sub-10_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-10/in_bold3Tp2/sub-10_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-10/in_bold3Tp2/sub-10_task-retmap_run-1_bold.nii.gz
+arguments = sub-10/in_bold3Tp2/sub-10_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-10/in_bold3Tp2/sub-10_task-retmap_run-2_bold.nii.gz
+arguments = sub-10/in_bold3Tp2/sub-10_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-10/in_bold3Tp2/sub-10_task-retmap_run-3_bold.nii.gz
+arguments = sub-10/in_bold3Tp2/sub-10_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-10/in_bold3Tp2/sub-10_task-retmap_run-4_bold.nii.gz
+arguments = sub-10/in_bold3Tp2/sub-10_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-14/in_bold3Tp2/sub-14_task-avmovie_run-1_bold.nii.gz
 queue
@@ -308,13 +308,13 @@ arguments = sub-14/in_bold3Tp2/sub-14_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-14/in_bold3Tp2/sub-14_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-14/in_bold3Tp2/sub-14_task-retmap_run-1_bold.nii.gz
+arguments = sub-14/in_bold3Tp2/sub-14_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-14/in_bold3Tp2/sub-14_task-retmap_run-2_bold.nii.gz
+arguments = sub-14/in_bold3Tp2/sub-14_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-14/in_bold3Tp2/sub-14_task-retmap_run-3_bold.nii.gz
+arguments = sub-14/in_bold3Tp2/sub-14_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-14/in_bold3Tp2/sub-14_task-retmap_run-4_bold.nii.gz
+arguments = sub-14/in_bold3Tp2/sub-14_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-15/in_bold3Tp2/sub-15_task-avmovie_run-1_bold.nii.gz
 queue
@@ -342,13 +342,13 @@ arguments = sub-15/in_bold3Tp2/sub-15_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-15/in_bold3Tp2/sub-15_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-15/in_bold3Tp2/sub-15_task-retmap_run-1_bold.nii.gz
+arguments = sub-15/in_bold3Tp2/sub-15_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-15/in_bold3Tp2/sub-15_task-retmap_run-2_bold.nii.gz
+arguments = sub-15/in_bold3Tp2/sub-15_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-15/in_bold3Tp2/sub-15_task-retmap_run-3_bold.nii.gz
+arguments = sub-15/in_bold3Tp2/sub-15_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-15/in_bold3Tp2/sub-15_task-retmap_run-4_bold.nii.gz
+arguments = sub-15/in_bold3Tp2/sub-15_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-16/in_bold3Tp2/sub-16_task-avmovie_run-1_bold.nii.gz
 queue
@@ -376,13 +376,13 @@ arguments = sub-16/in_bold3Tp2/sub-16_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-16/in_bold3Tp2/sub-16_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-16/in_bold3Tp2/sub-16_task-retmap_run-1_bold.nii.gz
+arguments = sub-16/in_bold3Tp2/sub-16_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-16/in_bold3Tp2/sub-16_task-retmap_run-2_bold.nii.gz
+arguments = sub-16/in_bold3Tp2/sub-16_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-16/in_bold3Tp2/sub-16_task-retmap_run-3_bold.nii.gz
+arguments = sub-16/in_bold3Tp2/sub-16_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-16/in_bold3Tp2/sub-16_task-retmap_run-4_bold.nii.gz
+arguments = sub-16/in_bold3Tp2/sub-16_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-17/in_bold3Tp2/sub-17_task-avmovie_run-1_bold.nii.gz
 queue
@@ -410,13 +410,13 @@ arguments = sub-17/in_bold3Tp2/sub-17_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-17/in_bold3Tp2/sub-17_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-17/in_bold3Tp2/sub-17_task-retmap_run-1_bold.nii.gz
+arguments = sub-17/in_bold3Tp2/sub-17_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-17/in_bold3Tp2/sub-17_task-retmap_run-2_bold.nii.gz
+arguments = sub-17/in_bold3Tp2/sub-17_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-17/in_bold3Tp2/sub-17_task-retmap_run-3_bold.nii.gz
+arguments = sub-17/in_bold3Tp2/sub-17_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-17/in_bold3Tp2/sub-17_task-retmap_run-4_bold.nii.gz
+arguments = sub-17/in_bold3Tp2/sub-17_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-18/in_bold3Tp2/sub-18_task-avmovie_run-1_bold.nii.gz
 queue
@@ -444,13 +444,13 @@ arguments = sub-18/in_bold3Tp2/sub-18_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-18/in_bold3Tp2/sub-18_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-18/in_bold3Tp2/sub-18_task-retmap_run-1_bold.nii.gz
+arguments = sub-18/in_bold3Tp2/sub-18_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-18/in_bold3Tp2/sub-18_task-retmap_run-2_bold.nii.gz
+arguments = sub-18/in_bold3Tp2/sub-18_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-18/in_bold3Tp2/sub-18_task-retmap_run-3_bold.nii.gz
+arguments = sub-18/in_bold3Tp2/sub-18_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-18/in_bold3Tp2/sub-18_task-retmap_run-4_bold.nii.gz
+arguments = sub-18/in_bold3Tp2/sub-18_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-19/in_bold3Tp2/sub-19_task-avmovie_run-1_bold.nii.gz
 queue
@@ -478,13 +478,13 @@ arguments = sub-19/in_bold3Tp2/sub-19_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-19/in_bold3Tp2/sub-19_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-19/in_bold3Tp2/sub-19_task-retmap_run-1_bold.nii.gz
+arguments = sub-19/in_bold3Tp2/sub-19_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-19/in_bold3Tp2/sub-19_task-retmap_run-2_bold.nii.gz
+arguments = sub-19/in_bold3Tp2/sub-19_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-19/in_bold3Tp2/sub-19_task-retmap_run-3_bold.nii.gz
+arguments = sub-19/in_bold3Tp2/sub-19_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-19/in_bold3Tp2/sub-19_task-retmap_run-4_bold.nii.gz
+arguments = sub-19/in_bold3Tp2/sub-19_task-retmapccw_run-1_bold.nii.gz
 queue
 arguments = sub-20/in_bold3Tp2/sub-20_task-avmovie_run-1_bold.nii.gz
 queue
@@ -512,11 +512,11 @@ arguments = sub-20/in_bold3Tp2/sub-20_task-objectcategories_run-3_bold.nii.gz
 queue
 arguments = sub-20/in_bold3Tp2/sub-20_task-objectcategories_run-4_bold.nii.gz
 queue
-arguments = sub-20/in_bold3Tp2/sub-20_task-retmap_run-1_bold.nii.gz
+arguments = sub-20/in_bold3Tp2/sub-20_task-retmapcon_run-1_bold.nii.gz
 queue
-arguments = sub-20/in_bold3Tp2/sub-20_task-retmap_run-2_bold.nii.gz
+arguments = sub-20/in_bold3Tp2/sub-20_task-retmapexp_run-1_bold.nii.gz
 queue
-arguments = sub-20/in_bold3Tp2/sub-20_task-retmap_run-3_bold.nii.gz
+arguments = sub-20/in_bold3Tp2/sub-20_task-retmapclw_run-1_bold.nii.gz
 queue
-arguments = sub-20/in_bold3Tp2/sub-20_task-retmap_run-4_bold.nii.gz
+arguments = sub-20/in_bold3Tp2/sub-20_task-retmapccw_run-1_bold.nii.gz
 queue

@@ -3,7 +3,7 @@
 set -e
 set -u
 
-odir="qa/tsnr/bold3Tp2"
+odir="qa/bold3Tp2/tsnr"
 mkdir -p $odir
 
 for s in sub-*; do
