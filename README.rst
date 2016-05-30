@@ -3,8 +3,8 @@ studyforrest.org Dataset
 
 |license| |access|
 
-Pre-align MRI data
-===============================================
+Pre-aligned MRI data
+====================
 
 This repository contains data derived from the raw data releases of the
 *studyforrest.org* project. In particular these are:
