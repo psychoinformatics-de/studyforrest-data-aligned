@@ -1,0 +1,39 @@
+# Metadata for DOI registration according to DataCite Metadata Schema 4.1.
+# For detailed schema description see https://doi.org/10.5438/0014
+
+authors:
+  - firstname: Michael
+    lastname: Hanke
+    id: "ORCID:0000-0001-6398-6370"
+
+
+title: Pre-aligned MRI Data
+
+
+description: |
+  "This repository contains data derived from the raw data releases of the
+   studyforrest.org project. In particular these are:
+
+     - BOLD fMRI timeseries aligned to subject-specific template images and
+       using transformations available from
+       https://github.com/psychoinformatics-de/studyforrest-data-templatetransforms
+
+   For more information about the project visit: http://studyforrest.org"
+
+
+keywords:
+  - Neuroscience
+  - Studyforrest
+
+
+license:
+  name: "Open Data Commons Public Domain Dedication and License (PDDL)"
+  url: "https://opendatacommons.org/licenses/pddl/"
+
+
+# Resource type. Default is Dataset, other possible values are Software, Image, Text.
+resourcetype: Dataset
+
+
+# Do not edit or remove the following line
+templateversion: 1.2
